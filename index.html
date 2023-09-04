@@ -1,0 +1,68 @@
+# HTML Template for Interactive Web-Based Lesson with H5P Activities
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+
+<head>
+
+  <title>Spot the Fallacy: Unmasking Bad Faith Arguments</title>
+  <link rel='stylesheet' type='text/css' href='styles.css'>
+  <script src='https://h5p.org/sites/all/modules/h5p/library/js/h5p.js'></script>
+</head>
+<body>
+  <section>
+    <h1>Welcome to Spot the Fallacy!</h1>
+    <p>This interactive lesson will teach you how to identify common logical fallacies used in bad faith arguments.</p>
+    <!-- H5P Interactive Video -->
+    <div class='h5p-activity' data-h5p='interactive-video'></div>
+  </section>
+  <section>
+    <h2>What is a Logical Fallacy?</h2>
+    <p>A logical fallacy is an error in reasoning that renders an argument invalid.</p>
+    <!-- H5P Multiple Choice Quiz -->
+    <div class='h5p-activity' data-h5p='multiple-choice'></div>
+  </section>
+  <section>
+    <h2>Common Logical Fallacies</h2>
+    <div class='fallacy-slide'>
+      <h3>Ad Hominem</h3>
+      <p>Attacking the person instead of the argument.</p>
+      <!-- H5P Drag and Drop -->
+      <div class='h5p-activity' data-h5p='drag-and-drop'></div>
+    </div>
+    <div class='fallacy-slide'>
+      <h3>Strawman</h3>
+      <p>Misrepresenting someone's argument to make it easier to attack.</p>
+      <!-- H5P Fill in the Blanks -->
+      <div class='h5p-activity' data-h5p='fill-in-the-blanks'></div>
+    </div>
+    <!-- Add more fallacy slides here -->
+  </section>
+  <section>
+    <h2>Test Your Knowledge</h2>
+    <button>Start Quiz</button>
+    <!-- H5P Summary -->
+    <div class='h5p-activity' data-h5p='summary'></div>
+  </section>
+  
+  <h2>Quiz</h2>
+  <div class='h5p-activity' data-h5p='question-set'></div>
+
+<iframe src="https://h5p.org/h5p/embed/615" width="1091" height="738" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Quiz (Question Set)"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+  <!-- H5P Interactive Video -->
+  <h2>Dialog Cards</h2>
+  <div class='h5p-activity' data-h5p='dialog-cards'></div>
+<iframe src="https://h5p.org/h5p/embed/619" width="1091" height="645" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Dialog Cards"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+
+  <!-- H5P Interactive Video -->
+  <h2>Interactive Video</h2>
+  <div class='h5p-activity' data-h5p='interactive-video'></div>
+
+  <!-- H5P Multiple Choice -->
+  <h2>Multiple Choice</h2>
+  <iframe src="https://h5p.org/h5p/embed/712" width="630" height="448" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Multiple Choice"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+  <div class='h5p-activity' data-h5p='multiple-choice'></div>
+</body>
+</html>
